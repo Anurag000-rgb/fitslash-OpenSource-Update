@@ -1,3 +1,6 @@
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`,
+})
 module.exports = {
   siteMetadata: {
     title: `FitSlash Gatsby`,
@@ -11,6 +14,13 @@ module.exports = {
       options: {
         name: `images`,
         path: `${__dirname}/src/images`,
+      },
+    },
+    {
+      resolve: `gatsby-source-contentful`,
+      options: {
+        spaceId: 'xpqyfc82uqen',
+        accessToken: '7sIptivTDmpwzVSrVtf-kuABnhVnBbSeuMdOxXi_DVo',
       },
     },
     `gatsby-transformer-sharp`,
