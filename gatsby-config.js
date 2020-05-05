@@ -1,3 +1,8 @@
+const dotenv = require('dotenv')
+
+if (process.env.NODE_ENV !=='production') {
+  dotenv.config()
+}
 module.exports = {
   siteMetadata: {
     title: `FitSlash Gatsby`,
@@ -16,8 +21,8 @@ module.exports = {
     {
       resolve: `gatsby-source-contentful`,
       options: {
-        spaceId: 'xpqyfc82uqen',
-        accessToken: '7sIptivTDmpwzVSrVtf-kuABnhVnBbSeuMdOxXi_DVo',
+        spaceId: process.env.CONTENTFUL_SPACE_ID,
+        accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
       },
     },
     `gatsby-transformer-sharp`,
