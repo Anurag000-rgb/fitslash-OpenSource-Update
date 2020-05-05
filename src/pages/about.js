@@ -4,11 +4,12 @@ import { Link, graphql } from "gatsby";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 import BackgroundSection from "../components/global/BackgroundSection";
+import Agam from "../components/Home/info";
 const AboutPage = ({data}) => (
   <Layout>
     <SEO title="Home" keywords ={[`gatsby`,`application`, `react`]} />
     <BackgroundSection  img={data.img.childImageSharp.fluid} title="about page" styleClass='about-background'  />
-    
+    <Agam/>
   </Layout>
 );
 
