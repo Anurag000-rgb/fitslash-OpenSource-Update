@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function title({title}) {
+export default function Title({title}) {
     return (
         <div className="row">
             <div className="col text-center mb-3">

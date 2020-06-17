@@ -20,6 +20,7 @@ h1,h2,h3,h4,h5,h6{
 .cart-icon{
   cursor:pointer;
   font-size: 2rem;
+  color: var(--mainYellow);
 }
 .default-background{
   min-height: 100vh;
@@ -49,4 +50,7 @@ h1,h2,h3,h4,h5,h6{
 }
 .footer{
   background: var(--mainDark);
+}
+.menu, .contact{
+  background: var(--mainGrey);
 }
