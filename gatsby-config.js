@@ -23,14 +23,14 @@ module.exports = {
       options: {
         spaceId: 'xpqyfc82uqen',
         accessToken: '7sIptivTDmpwzVSrVtf-kuABnhVnBbSeuMdOxXi_DVo'
-      }
+      },
     },
     {
 			resolve: 'gatsby-plugin-snipcart',
 			options: {
         apiKey: process.env.SNIPCART_API,
         autopop: true
-			}
+			},
 		},
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
