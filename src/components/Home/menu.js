@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Title from '../global/title';
 import Img from "gatsby-image";
-import { node } from 'prop-types';
+// import { node } from 'prop-types';
 
 const getCategories = items =>{
     let tempItems = items.map(items =>{
