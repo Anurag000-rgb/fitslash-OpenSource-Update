@@ -1,8 +1,8 @@
-const dotenv = require('dotenv')
+var dotenv = require("dotenv").config()
 
-if (process.env.NODE_ENV !=='production') {
-  dotenv.config()
-}
+// if (process.env.NODE_ENV !='production') {
+//   dotenv.config()
+// }
 module.exports = {
   siteMetadata: {
     title: `FitSlash Gatsby`,
@@ -19,19 +19,12 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-source-contentful`,
+      resolve: 'gatsby-source-contentful',
       options: {
-        spaceId: 'xpqyfc82uqen',
-        accessToken: '7sIptivTDmpwzVSrVtf-kuABnhVnBbSeuMdOxXi_DVo'
+        accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
+        spaceId: process.env.CONTENTFUL_SPACE_ID,
       },
-    },
-    {
-			resolve: 'gatsby-plugin-snipcart',
-			options: {
-        apiKey: process.env.SNIPCART_API,
-        autopop: true
-			},
-		},
+    }, 
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
@@ -46,6 +39,13 @@ module.exports = {
         icon: `src/images/icon.png`, // This path is relative to the root of the site.
       },
     },
+    {
+			resolve: 'gatsby-plugin-snipcart',
+			options: {
+        apiKey: process.env.SNIPCART_API,
+        autopop: true,
+			},
+		},
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
