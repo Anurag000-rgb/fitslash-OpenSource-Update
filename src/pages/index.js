@@ -8,7 +8,6 @@ import BackgroundSection from "../components/global/BackgroundSection"
 import Info from "../components/Home/info";
 import Menu from "../components/Home/menu";
 import Products from "../components/Home/products";
-import Contact from "../components/Home/contact";
 const IndexPage = ({data}) => (
   <Layout>
     <SEO title="Home" keywords={['gatsby', 'application','react']}/>

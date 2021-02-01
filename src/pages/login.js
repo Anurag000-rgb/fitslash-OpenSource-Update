@@ -1,6 +1,5 @@
 import React, { useState, useContext } from 'react'
 import Layout from "../components/layout"
-import SEO from "../components/seo"
 import { AuthContext } from "../contexts/auth"
 import firebase from "gatsby-plugin-firebase"
 import { navigate } from 'gatsby'

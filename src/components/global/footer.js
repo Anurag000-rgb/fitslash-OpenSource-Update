@@ -18,19 +18,19 @@ export default function footer() {
                         <h2 className="FooterTitle Heading u-h6">IMPORTANT LINKS</h2>
                         <ul className="Linklist">
                             <li className="LinklistItem">
-                                <a href="/pages/why-fitslash" className="Link LinkPrimary">Why FitSlash</a>
+                                <a href="https://fitslash.com/pages/why-fitslash" className="Link LinkPrimary">Why FitSlash</a>
                             </li>
                             <li className="LinklistItem">
-                                <a href="/pages/importer-certifications-and-dealerships" className="Link LinkPrimary">Certifications And Dealerships Of FitSlash</a>
+                                <a href="https://fitslash.com/pages/importer-certifications-and-dealerships" className="Link LinkPrimary">Certifications And Dealerships Of FitSlash</a>
                             </li>
                             <li className="LinklistItem">
-                                <a href="/pages/refunds-returns" className="Link LinkPrimary">Returns &amp; Refunds</a>
+                                <a href="https://fitslash.com/pages/refunds-returns" className="Link LinkPrimary">Returns &amp; Refunds</a>
                             </li>
                             <li className="LinklistItem">
-                                <a href="/pages/about-us" className="Link LinkPrimary">About Us</a>
+                                <a href="https://fitslash.com/pages/about-us" className="Link LinkPrimary">About Us</a>
                             </li>
                             <li className="LinklistItem">
-                                <a href="/pages/authentic-supplements" className="Link LinkPrimary">Authenticity Of Your Supplements</a>
+                                <a href="https://fitslash.com/pages/authentic-supplements" className="Link LinkPrimary">Authenticity Of Your Supplements</a>
                             </li>
                         </ul>
                     </div>
