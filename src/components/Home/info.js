@@ -8,12 +8,12 @@ export default function Info() {
                 <Title title="Our Motivation"></Title>
                 <div className="row">
                     <div className="col-10 col-sm-8 mx-auto text-center">
-                        <p className="lead text-muted mb-5">
+                        <p className="lead text-muted mb-2">
                         lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsum lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsum
                         </p> 
-                        <Link to="/about/">
+                        {/* <Link to="/about/">
                             <button className="btn text-uppercase btn-yellow">about page</button>
-                        </Link>
+                        </Link> */}
                     </div>
                 </div>
             </div>

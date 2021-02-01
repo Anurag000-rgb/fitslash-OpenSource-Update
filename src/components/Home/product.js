@@ -14,7 +14,7 @@ export default function Product({product}) {
                     data-item-url="https://fitslash.netlify.app/"
                     data-item-description="" 
                     data-item-name={product.title}
-                    data-item-image={product.image.fluid.src}>
+                    >
                         add to cart
                     </button>
                 </div>

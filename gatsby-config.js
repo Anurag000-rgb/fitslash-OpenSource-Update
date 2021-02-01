@@ -5,7 +5,7 @@ var dotenv = require("dotenv").config()
 // }
 module.exports = {
   siteMetadata: {
-    title: `FitSlash Gatsby`,
+    title: `FitSlash`,
     description: `Leading brands Importer` ,
     author: `Agam`,
   },
@@ -32,7 +32,7 @@ module.exports = {
       options: {
         name: `gatsby-starter-default`,
         short_name: `starter`,
-        start_url: `/`,
+        start_url: `/register`,
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
@@ -45,7 +45,21 @@ module.exports = {
         apiKey: process.env.SNIPCART_API,
         autopop: true,
 			},
-		},
+    },
+    {
+      resolve: 'gatsby-plugin-firebase',
+      options: {
+        credentials: {
+          apiKey : process.env.apiKey,
+          authDomain: process.env.authDomain,
+          databaseURL : process.env.databaseURL,
+          storageBucket : process.env.storageBucket,
+          projectId : process.env.projectId,
+          appId: process.env.appId,
+          messagingSenderId : process.env.messagingSenderId
+        }
+      }
+    },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,

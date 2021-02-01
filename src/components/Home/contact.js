@@ -16,7 +16,11 @@ export default function Contact() {
                         {/* email */}
                         <div className="form-group">
                             <label htmlFor="email">Email</label>
-                            <input type="text" className="form-control" name="email" id="email" placeholder="abc@xyz.com" />
+                            <input type="text" className="form-control" name="email" id="email" placeholder="mno@xyz.com" />
+                        </div>
+                        <div className="form-group">
+                            <label htmlFor="email">Mobile No</label>
+                            <input type="text" className="form-control" name="mobile" id="mobile" placeholder="123-456-7890" />
                         </div>
                         {/* description */}
                         <div className="form-group">

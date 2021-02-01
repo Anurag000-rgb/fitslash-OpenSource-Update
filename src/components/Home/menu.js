@@ -10,7 +10,7 @@ const getCategories = items =>{
     })
     let tempCategories = new Set(tempItems);
     let categories = Array.from(tempCategories);
-    categories = ["all", ...categories];
+    categories = ["All", ...categories];
     return categories;
 }
 export default class Menu extends Component {
@@ -24,7 +24,7 @@ export default class Menu extends Component {
     }
     handleItems = category => {
         let tempItems = [...this.state.items];
-        if(category === "all"){
+        if(category === "All"){
             this.setState(()=>{
                 return {proteinItem:tempItems}
             })
@@ -47,7 +47,7 @@ export default class Menu extends Component {
                         <div className="row mb-5">
                             <div className="col-10 mx-auto text-center">
                                 {this.state.categories.map((category,index)=>{
-                                    return (<button type="button" key={index} className="btn btn-yellow text-capitalize m-3" onClick={() =>{
+                                    return (<button type="button" key={index} className="btn btn-yellow m-3" onClick={() =>{
                                         this.handleItems(category);
                                     }} >{category}</button>)
                                 })}
@@ -69,7 +69,16 @@ export default class Menu extends Component {
                                                 </div> 
                                                 <p className="text-muted">
                                                     <small>{node.description.description}</small>
-                                                </p>
+                                            </p> 
+                                            <button className="btn btn-yellow mt-3 text-capitalize snipcart-add-item"
+                                                data-item-id={node.id}
+                                                data-item-price={node.price}
+                                                data-item-url="http://localhost:8000/"
+                                                data-item-description=""
+                                                data-item-name={node.title}
+                                                >
+                                                add to cart
+                    </button>
                                             </div>
                                         </div>
                                 )

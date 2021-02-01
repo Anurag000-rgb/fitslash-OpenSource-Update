@@ -3,17 +3,16 @@ import Product from './product';
 import Title from "../global/title";
 import { StaticQuery, graphql } from "gatsby";
 const getProducts = graphql`{
-                                products: allContentfulProteinItem{
+                                sale: allContentfulWeeklySale {
                                     edges {
                                         node {
                                             id
                                             title
                                             price
-                                            image{
-                                                fluid(maxHeight:426){
+                                            image {
+                                                fluid(maxHeight: 426) {
                                                 src
                                                 ...GatsbyContentfulFluid_tracedSVG
-                                            
                                                 }
                                             }
                                         }
@@ -25,9 +24,9 @@ export default function Products() {
         <StaticQuery query={getProducts} render={data =>{
             return(<section className="py-5">
                 <div className="container">
-                    <Title title=" Our Products"></Title>
+                    <Title title=" Weekly Sale"></Title>
                     <div className="row">
-                        {data.products.edges.map(({node:product})=>{
+                        {data.sale.edges.map(({node:product})=>{
                             return <Product key={product.id} product={product} />;
                         })}
                     </div>

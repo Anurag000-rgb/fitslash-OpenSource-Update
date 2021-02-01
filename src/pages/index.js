@@ -15,9 +15,8 @@ const IndexPage = ({data}) => (
     <BackgroundSection img=
     {data.img.childImageSharp.fluid} title ="FitSlash Site"></BackgroundSection>
     <Info/>
+    <Products />
     <Menu items={data.menu}/>
-    <Products /> 
-    <Contact />
   </Layout>
 );
 
