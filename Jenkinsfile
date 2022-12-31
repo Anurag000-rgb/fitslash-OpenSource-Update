@@ -2,8 +2,12 @@ node {
 
     def application = "gatsbyapp"
     def dockerhubaccount = "anurag2000"
+    
+    stage('Clone repository') {
+		checkout scm
+	}
 
-    stage("Clone Repository"){
+    stage('Build image'){
         app = docker.build("${dockerhubaccount}/${application}:${BUILD_NUMBER}")
     }
 
