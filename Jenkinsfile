@@ -23,4 +23,5 @@ node {
 
     stage('Remove old images') {
 		sh("docker rmi ${dockerhubaccount}/${application}:latest -f")
+    }
 }
