@@ -1,7 +1,7 @@
 FROM node:18-alpine AS build
 
 WORKDIR /app
-copy . .
+COPY . .
 
 RUN yarn
 RUN yarn build
